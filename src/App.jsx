@@ -48,7 +48,7 @@ const App = () => {
         {/* <Searchicon /> */}
         <main>
           <section className="input-form">
-            <h1>{key}</h1>
+         
             <form>
               <input
                 required
@@ -155,6 +155,7 @@ const App = () => {
   } else {
     return (
       <section className="input-form">
+           <h1>{key}</h1>
         <form>
           <input
             required
