@@ -1,0 +1,157 @@
+/* input field */
+.input-form {
+  /* max-width: 300px; */
+  width: 100%;
+
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.input-form form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 27px;
+  border: 2px solid #888;
+}
+
+input[type="text"] {
+  padding: 11px 17px;
+  border-radius: 27px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+::placeholder {
+  outline: none;
+  border: none;
+  border-radius: 27px;
+  color: #4d3f3f;
+  font-size: 1rem;
+}
+
+.input-form button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 5px 7px;
+  padding: 11px 17px;
+  border-radius: 0px 27px 27px 0px;
+  font-size: 1rem;
+}
+
+/* details  */
+.details {
+  height: 100%;
+  width: 90%;
+  border: 0.1rem solid #eee;
+  padding: 10px;
+  margin: 4rem auto;
+  border-radius: 17px;
+  /* background: linear-gradient(rgba(254, 255, 255, 0.3), rgba(0, 0, 0, 0.3)); */
+  background-color: #0c0574;
+  color: #fff;
+  box-shadow: 0px 0px 5px 1px #000;
+}
+
+.location-icon {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.location {
+  text-align: initial;
+}
+
+.location h1 {
+  margin-left: 0.1rem;
+  font-size: 2rem;
+}
+
+.location span {
+  font-size: 4rem;
+}
+
+.location .icon {
+  position: relative;
+}
+.location-icon .icon {
+  width: 200px;
+  height: 200px;
+}
+.location-icon .icon img {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.icon p {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -15px;
+  font-size: 2rem;
+}
+
+/* current */
+
+.current {
+  margin: 5rem auto;
+  /* background-color: #000; */
+}
+
+.current section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 2rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.current .cart {
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 17px;
+  background: linear-gradient(rgba(254, 255, 255, 0.3), rgba(0, 0, 0, 0.001));
+  color: #fff;
+  box-shadow: 0px 0px 5px 1px #000;
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.current .cart h1 {
+  position: absolute;
+  top: 5px;
+  font-size: 2rem;
+}
+
+.cart div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .location-icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    margin-top: 2rem;
+  }
+  .icon p {
+    margin-left: -10px;
+    margin-top: -15px;
+  }
+}

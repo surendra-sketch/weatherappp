@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #f1fff1;
+  /* margin-top: 10px; */
+}
+button {
+  cursor: pointer;
+}
+
+.rootlayout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(24, 240, 247, 0.952), rgba(12, 3, 4, 0.001)),
+    url("/public/images/bg1.jpg") no-repeat center center/cover;
+  /* justify-content: center; */
+  padding-top: 2rem;
+  position: relative;
+}
