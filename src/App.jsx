@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import ShowDetails from "./components/Seachbar";
-import { Loader } from "./components";
+import { Loader, Searchicon } from "./components";
 import "./app.css";
 import axios from "axios";
 
@@ -48,7 +48,6 @@ const App = () => {
         {/* <Searchicon /> */}
         <main>
           <section className="input-form">
-         
             <form>
               <input
                 required
@@ -60,7 +59,9 @@ const App = () => {
                   setSearchterm(e.target.value);
                 }}
               />
-              <button onClick={handleSearch}>search</button>
+              <button onClick={handleSearch}>
+                <Searchicon />
+              </button>
             </form>
           </section>
 
@@ -155,7 +156,6 @@ const App = () => {
   } else {
     return (
       <section className="input-form">
-           
         <form>
           <input
             required
@@ -167,7 +167,9 @@ const App = () => {
               setSearchterm(e.target.value);
             }}
           />
-          <button onClick={handleSearch}>search</button>
+          <button onClick={handleSearch}>
+            <Searchicon />
+          </button>
         </form>
       </section>
     );
