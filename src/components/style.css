@@ -12,3 +12,11 @@
   height: 100px;
   width: 100px;
 }
+.search-icon {
+  width: 30px;
+  height: 30px;
+}
+.search-icon img {
+  width: 100%;
+  height: 100%;
+}

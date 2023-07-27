@@ -1,9 +1,9 @@
 import React from "react";
-
+import "./style.css";
 const Searchicon = () => {
   return (
-    <div>
-      <img src="./public/images/Search.svg" alt="" />
+    <div className="search-icon">
+      <img src="/images/Search.svg" alt="" />
     </div>
   );
 };
